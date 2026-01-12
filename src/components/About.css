@@ -117,10 +117,46 @@
 @media (max-width: 600px) {
   .about-highlights {
     flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
   }
 
   .highlight {
     width: 100%;
     justify-content: center;
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .experience-item {
+    padding: 20px;
+  }
+
+  .experience-item:hover {
+    transform: none;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .exp-role {
+    font-size: 15px;
+  }
+
+  .exp-description {
+    font-size: 12px;
+  }
+
+  .experience-list {
+    gap: 16px;
   }
 }

@@ -153,13 +153,50 @@
 @media (max-width: 600px) {
   .skills-bento {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .skill-card {
-    padding: 24px;
+    padding: 20px;
+  }
+
+  .skill-card-header {
+    margin-bottom: 16px;
+  }
+
+  .skill-card-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .skill-card-header h3 {
+    font-size: 14px;
+  }
+
+  .skill-tags {
+    gap: 6px;
+  }
+
+  .skill-tag {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .skills-highlight {
+    padding: 24px 16px;
+    margin-top: 32px;
   }
 
   .highlight-content p {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .skills-marquee {
+    margin-top: 40px;
+  }
+
+  .marquee-content span {
+    font-size: 1rem;
   }
 }

@@ -50,6 +50,7 @@
   position: relative;
   z-index: 1;
   max-width: 900px;
+  width: 100%;
 }
 
 .hero-label {
@@ -188,10 +189,41 @@
 @media (max-width: 768px) {
   .hero {
     padding: 100px 20px;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-label {
+    font-size: 11px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .label-line {
+    width: 30px;
+  }
+
+  .name-letter {
+    font-size: clamp(3rem, 18vw, 6rem);
+  }
+
+  .name-letter.outline {
+    -webkit-text-stroke: 1px var(--text-primary);
+    text-stroke: 1px var(--text-primary);
+  }
+
+  .hero-tagline {
+    font-size: 14px;
+    max-width: 100%;
   }
 
   .hero-cta {
     flex-direction: column;
+    margin-bottom: 40px;
   }
 
   .btn {
@@ -199,8 +231,46 @@
     justify-content: center;
   }
 
-  .name-letter.outline {
-    -webkit-text-stroke: 1px var(--text-primary);
-    text-stroke: 1px var(--text-primary);
+  .hero-stats {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 10px;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 80px 16px;
+  }
+
+  .name-letter {
+    font-size: clamp(2.5rem, 20vw, 5rem);
+  }
+
+  .hero-label {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .stat {
+    flex: 1;
+    min-width: 80px;
   }
 }

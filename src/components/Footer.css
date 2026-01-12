@@ -94,18 +94,30 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 24px;
+  }
+
   .footer-content {
     flex-direction: column;
     text-align: center;
+    gap: 24px;
+    padding-bottom: 24px;
   }
 
   .footer-links {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-social {
     justify-content: center;
   }
 
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+    gap: 12px;
   }
 }

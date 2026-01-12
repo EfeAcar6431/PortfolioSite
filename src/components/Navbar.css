@@ -105,21 +105,37 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 16px 0;
+  }
+
+  .nav-container {
+    padding: 0 16px;
+  }
+
+  .nav-logo {
+    font-size: 1.3rem;
+  }
+
   .nav-toggle {
     display: flex;
+    z-index: 101;
   }
 
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 80%;
+    max-width: 300px;
     height: 100vh;
     background: var(--bg-secondary);
     flex-direction: column;
     justify-content: center;
     gap: 32px;
     transition: right 0.4s ease;
+    padding: 20px;
+    border-left: 1px solid var(--border-color);
   }
 
   .nav-links.open {
@@ -127,6 +143,11 @@
   }
 
   .nav-link {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .nav-resume {
+    width: fit-content;
+    margin: 0 auto;
   }
 }

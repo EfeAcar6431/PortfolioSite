@@ -174,19 +174,46 @@
 }
 
 @media (max-width: 768px) {
+  .contact-title {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .contact-subtitle {
+    font-size: 14px;
+  }
+
   .contact-links {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    width: 100%;
   }
 
   .contact-link {
     width: 100%;
-    max-width: 320px;
-    justify-content: center;
+    max-width: 100%;
   }
 
   .contact-email-btn {
-    padding: 18px 36px;
-    font-size: 16px;
+    padding: 16px 32px;
+    font-size: 15px;
+  }
+
+  .contact-cta {
+    margin-bottom: 40px;
+  }
+
+  .decoration-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-link {
+    padding: 16px 20px;
+    gap: 12px;
+  }
+
+  .link-value {
+    font-size: 13px;
   }
 }
